@@ -1,6 +1,6 @@
 // src/components/Messaging.js
 import React, { useState, useEffect } from 'react';
-import { firestore } from '../firebaseConfig';
+import { firestore } from '../firebaseconfig';
 
 function Messaging() {
   const [messages, setMessages] = useState([]);
