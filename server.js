@@ -1,6 +1,6 @@
 // server.js
 const express = require('express');
-const { db } = require('./firebaseconfig');
+const { db } = require('./firebaseConfig');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
