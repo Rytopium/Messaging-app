@@ -1,11 +1,12 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// firebaseConfig.js
+const firebase = require("firebase/app");
+require("firebase/analytics");
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD_rb7VtTkCD1eiHR6gdz_FYydx_Q75tGo",
+  apiKey: "YOUR_API_KEY",
   authDomain: "messaging-app-36634.firebaseapp.com",
   projectId: "messaging-app-36634",
   storageBucket: "messaging-app-36634.appspot.com",
@@ -15,5 +16,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics();
+
+module.exports = { app, analytics };
